@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.academy">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:theme="@style/Theme.AppCompat"
+        app:elevation="0dp">
+
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="#019AE8"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/back"
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACADEMY"
+                android:fontFamily="@font/robotobold"
+                android:textSize="20dp"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/banner2"
+            android:scaleType="centerCrop"/>
+
+
+    </LinearLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="22dp"
+                android:text="Book Courses Now"
+                style="@style/viewParent.headerText" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/web_design1"
+                android:layout_gravity="center"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/bg_screen1"
+                    gl:end_color="@color/bg_screen1"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub2Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Web Design" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub2Title"
+                        android:text="Course Level Certificate\nCourse Duration: 4 Weeks" />
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="60dp"
+                        android:src="@drawable/website" />
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ui_ux_design1"
+                android:layout_gravity="center"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:end_color="@color/bg_screen2"
+                    gl:start_color="@color/bg_screen2"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub3Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Ui/Ux Design" />
+
+                    <TextView
+                        android:text="Course Level Certificate\nCourse Duration: 4 Weeks"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub3Title"/>
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="60dp"
+                        android:src="@drawable/ux" />
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/digital_design1"
+                android:layout_gravity="center"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/green_light"
+                    gl:end_color="@color/green_light"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub4Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Digital Marketing" />
+
+                    <TextView
+                        android:text="Course Level Certificate\nCourse Duration: 4 Weeks"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub4Title"/>
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="60dp"
+                        android:src="@drawable/media" />
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/digital_teach"
+                android:layout_gravity="center"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/bg_screen3"
+                    gl:end_color="@color/bg_screen3"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub5Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Digital Teaching" />
+
+                    <TextView
+                        android:text="Course Level Certificate\nCourse Duration: 4 Weeks"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub5Title"/>
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="60dp"
+                        android:src="@drawable/onlineclass" />
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>
